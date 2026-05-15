@@ -123,7 +123,7 @@ ws2811_t ledstring = {
 
 
 int main(void){
-
+	printf("DOING MAIN.C BADNESS");
 
 	//Declare pins as input or output
 	//	pinMode(laserSensor, INPUT);
