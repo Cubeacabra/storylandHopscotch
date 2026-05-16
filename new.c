@@ -145,6 +145,9 @@ int main(void){
 	float dis; //for ultrasound
 	ultraInit(); //initialize ultrasound
 
+
+	bool lightsOn = false;
+
 	while(1){
 	//printf("got in loop");
 	
@@ -165,15 +168,15 @@ int main(void){
 				//LED Strip uses GRB Format Like A Weirdo (0x00GGRRBB)
 				//Make a line of 3 colors
 				if (i % 3 == 0) {
-					digitalWrite(led1,LOW);
+					digitalWrite(led1,HIGH);
 				} else if ((i + 1) % 3 == 0) {
-					digitalWrite(led2,LOW);
+					digitalWrite(led2,HIGH);
 				} else {
-					digitalWrite(led3,LOW);
+					digitalWrite(led3,HIGH;
 				}
+				delay(300); //so lights turn on slowly
 			}
 
-			delay(100); //so lights turn on slowly
 			printf("...LED on\n");
 
 	}
