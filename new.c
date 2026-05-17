@@ -168,9 +168,9 @@ int main(void){
 				if (i % 3 == 0) {
 					digitalWrite(led1,HIGH);
 				} else if ((i + 1) % 3 == 0) {
-					digitalWrite(led2,HIGH);
-				} else {
 					digitalWrite(led3,HIGH);
+				} else {
+					digitalWrite(led2,HIGH);
 				}
 				delay(300); //so lights turn on slowly
 			}
@@ -185,9 +185,9 @@ int main(void){
 				if (i % 3 == 0) {
 					digitalWrite(led1,LOW);
 				} else if ((i + 1) % 3 == 0) {
-					digitalWrite(led2,LOW);
-				} else {
 					digitalWrite(led3,LOW);
+				} else {
+					digitalWrite(led2,LOW);
 				}
 			}
 			lightsOn = 0;
