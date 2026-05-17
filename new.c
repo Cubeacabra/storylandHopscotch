@@ -158,7 +158,7 @@ int main(void){
 
 		//OLD BROKE GOT TO HERE
 
-		printf("distance is %g cm\n", dis);	
+		printf("distance is %.2f cm\n", dis);	
 
 		// Indicate that UltraSound is triggered
 		if(dis < 50 && lightsOn == 0) { //TODO: random guess number here can be changed
