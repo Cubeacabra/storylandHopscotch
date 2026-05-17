@@ -161,7 +161,7 @@ int main(void){
 		printf("distance is %f cm\n", dis);	
 
 		// Indicate that UltraSound is triggered
-		if(dis < 60 && lightsOn == 0) { //TODO: random guess number here can be changed
+		if(dis < 50 && lightsOn == 0) { //TODO: random guess number here can be changed
 			printf("distance branch triggered\n");
 			for (int i = 0; i < 3; i++) {
 				//Make a line of 3 colors
@@ -178,7 +178,7 @@ int main(void){
 			printf("...LED on\n");
 
 		}
-		else if (dis > 60 && lightsOn == 1) {
+		else if (dis > 50 && lightsOn == 1) {
 			//Turn LEDs Off
 			printf("distance branch NOTTT triggered\n");
 			for (int i = 0; i < 3; i++) {
